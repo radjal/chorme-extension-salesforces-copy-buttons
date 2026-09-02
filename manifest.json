@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Salesforce Field Copier",
+  "version": "1.0",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://nissan-cec.lightning.force.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

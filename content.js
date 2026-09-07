@@ -18,6 +18,7 @@
         "Expense Code"
     ];
 
+
     /**
      * Extracts only the field value, ignoring edit buttons and hidden assistive text.
      */
@@ -34,6 +35,7 @@
         if (valueSpan) {
             // innerText excludes CSS hidden content, but we use it on the specific span 
             // to ensure siblings like the Edit button are never reached.
+            textToCopy = valueSpan.innerText.replace('Preview', '').trim(); //quick hack to remove ·preview· text when copying customer name
             textToCopy = valueSpan.innerText.trim();
         } else {
             // Fallback: cleaning up container text if standard span isn't found

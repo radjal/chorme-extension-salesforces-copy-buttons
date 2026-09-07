@@ -13,7 +13,9 @@
         "Registration Number",
         "Warranty Start Date",
         "Warranty End Date",
-        "VIN"
+        "VIN",
+        "Amount Offered", //not working for voucher fields 
+        "Expense Code"
     ];
 
     /**
